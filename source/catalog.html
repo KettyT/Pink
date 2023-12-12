@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: {{projectTitle}}</title>
+  <link rel="stylesheet" href="less/style.less" />
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img class="logo__img--mobile" src="img/icon/logo-pink.svg" width="74" height="23" alt="Pink">
+    <img class="logo__img--tablet" src="img/icon/logotype-white-tablet.svg" width="145" height="40" alt="Pink">
+    <img class="logo__img--desktop" src="img/icon/logotype-white-desktop.svg" width="147" height="40" alt="Pink">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="site-list__item">
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Конкурс
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="page-main--photos">
+  <section class="aboutPhotos__wrapper">
+    <h1>Фотографии <br> пользователей</h1>
+  </section>
+
+  <section class="userPhotos__text">
+    <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+  </section>
+
+  <section class="userPhotos">
+    <ul>
+      <li>
+        <img>
+        <div class="userRaview__wrapper">
+          <p class="userNameInTime">Анна(5 минут назад)</p>
+          <p class="userReviewPhoto">Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <p class="userLikes">Нравится: 215</p>
+        </div>
+      </li>
+      <li>
+        <img>
+        <div class="userRaview__wrapper">
+          <p class="userNameInTime">Левон(5 часов назад)</p>
+          <p class="userReviewPhoto">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="userLikes">Нравится: 356</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="photoUploadSettingsForm">
+    <h2 class="visually-hidden">Форма настройки и загрузки фото</h2>
+
+  </section>
+  <!-- Фото и форма с полями редактирования -->
+  <article class="photo-editor__form">
+    <h3 class="visually-hidden">Форма редактирования и загрузки фото</h3>
+
+    <!-- Фотоиллюстрация -->
+    <a class="photo-editor__link" href="##">
+      <picture>
+        <div class="photo-example"></div>
+      </picture>
+    </a>
+
+    <!-- Форма редактирования -->
+    <form class="photo-editor__controls" id="photo-controls" action="https://echo.htmlacademy.ru" name="photo-form" method="post">
+      <div class="photo-editor__settings">
+        <!-- Кадрирование -->
+        <button class="photo-editor__toggler photo-editor__toggler--active" type="button" aria-label="Кадрирование" id="crop-btn">
+          <span class="visually-hidden">Кадрирование</span>
+          <img src="img/icon/crop.svg" width="44" height="44" alt="Кадрирование">
+        </button>
+        <!-- Заливка -->
+        <button class="photo-editor__toggler" type="button" aria-label="Контраст" id="fill-btn">
+          <span class="visually-hidden">Заливка</span>
+          <img src="img/icon/fill.svg" width="48" height="43" alt="Заливка">
+        </button>
+        <!-- Контраст -->
+        <button class="photo-editor__toggler" type="button" aria-label="Контраст" id="contrast-btn">
+          <span class="visually-hidden">Контраст</span>
+          <img src="img/icon/contrast.svg" width="32" height="32" alt="Контраст">
+        </button>
+      </div>
+
+      <!-- Фильтры редактирования range-->
+      <fieldset>
+        <legend class="visually-hidden">Список фильтров</legend>
+        <ul class="photo-editor__list">
+          <!-- Кадрирование -->
+          <li class="photo-editor__item photo-editor__item--active">
+            <label class="photo-editor__label" for="crop-value"><span class="visually-hidden">Кадрирование</span></label>
+            <input class="photo-editor__input" type="range" id="crop-value" name="edit-img">
+          </li>
+          <!-- Оттенок -->
+          <li class="photo-editor__item">
+            <label class="photo-editor__label" for="fill-value"><span class="visually-hidden">Оттенок</span></label>
+            <input class="photo-editor__input" type="range" id="fill-value" name="edit-img">
+          </li>
+          <!-- Контраст -->
+          <li class="photo-editor__item">
+            <label class="photo-editor__label" for="contrast-value"><span class="visually-hidden">Контраст</span></label>
+            <input class="photo-editor__input" type="range" id="contrast-value" name="edit-img">
+          </li>
+        </ul>
+      </fieldset>
+
+      <!-- Отправить фото / отменить  -->
+      <p class="photo-editor__button-wrapper">
+        <button class="photo-editor__button page-button" type="submit" id="photo-send">Запостить</button>
+        <button class="photo-editor__button page-button" type="submit" id="photo-cancel" disabled>Отмена</button>
+      </p>
+    </form>
+
+  </article>
+</main>
+
+<!--* CATALOG - FOOTER -->
+
+</body>
+</html>

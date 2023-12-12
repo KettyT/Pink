@@ -1,0 +1,188 @@
+
+.background-blue-extra {
+  width: 100vw;
+  //width: 320px;
+  height: 100vh;
+}
+
+
+.backgroundPicture__wrapper {
+  background-image: url(../img/background/back-desktop.jpg);
+  width: 100vw;
+  height: 63vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.backgroundPictureHand__wrapper {
+  width: 100vw;
+  height: 84%;
+  max-height: 100%;
+  position: absolute;
+  bottom: 0;
+  /* left: 50%; */
+  /* margin-left: -277px; */
+}
+
+.backgroundMidlLayer__wrapper {
+  background-image: url(../img/background/phoneInHend.png);
+  background-repeat: no-repeat;
+  background-size: 113%;
+  background-position: center bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+
+.background-blue {
+  height: 37vh;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.backgroundPictureScreenPink__wrapper {
+  background-image: url(../img/background/screen.png);
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+  /* width: 196px; */
+  /* height: 375px; */
+  z-index: 1;
+  /* left: 367px; */
+  /* top: 30px; */
+  width: 38%;
+  height: 55%;
+  bottom: 20%;
+  right: 30%;
+}
+
+.about-app__first-moto {
+  /* outline: 5px solid rgba(0, 255, 255, 0.7); */
+  /* outline-offset: -5px; */
+  width: 280px;
+  height: 47px;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+  padding-top: 97px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  /* position: absolute; */
+  /* margin-top: 150px; */
+}
+
+.button {
+  color: @white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border: 3px solid @white;
+  padding: 18px 39px;
+  border-radius: 50px;
+  display: block;
+}
+
+.about-app__wrapper {
+  padding: 28px 16px;
+}
+
+.button-position--index {
+ //margin-bottom: 44px;
+}
+
+.about-app__os {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+  /* position: absolute; */
+  /* bottom: -1520px; */
+  /* right: 37%; */
+  /* z-index: 2; */
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  /* outline: 5px solid rgba(255, 200, 255, 0.7); */
+  /* outline-offset: -5px; */
+}
+
+.about-app__os__button {
+  margin: 8px auto 11px auto;
+  padding: 0;
+  list-style: none;
+  width: 204px;
+  height: 46px;
+  /* outline: 5px solid rgba(255, 0, 255, 0.7); */
+  /* outline-offset: -5px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .os-button {
+
+    display: flex;
+    align-items: center;
+
+    a {
+      display: block;
+      width: 47px;
+      height: 56px;
+
+      img {
+        width: 47px;
+        height: 56px;
+      }
+
+    }
+
+  }
+
+
+.background-blue {
+  background-color: @blue;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: @tablet-width) {
+
+}
+
+@media screen and (min-width: @desktop-width) {
+  .backgroundPicture__wrapper {
+    background-image: url("../img/background/back-desktop.jpg");
+    width: 100vw;
+    //width: 320px;
+    height: 100vh;
+    //height: 462px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .backgroundPictureHand__wrapper {
+    width: 660px;
+    height: 545px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -277px;
+  }
+}
