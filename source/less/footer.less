@@ -5,9 +5,6 @@
 }
 
 .page-footer__contacts {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-  height: 395px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,18 +34,86 @@
 }
 
 .page-footer__map {
-  height: 200px;
+  position: relative;
   width: 100%;
   z-index: 0;
+
+  .background_triangle {
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    background: url(../img/figures/triangle_white_footer.svg) no-repeat center bottom;
+    background-size: cover;
+  }
 }
+
+
 
 .social__list {
   width: 204px;
-  height: 35px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+  //outline: 5px solid rgba(0, 255, 255, 0.7);
+  //outline-offset: -5px;
   margin: 0 auto;
+}
+
+.social__item {
+  position: relative;
+
+  width: 48px;
+  height: 48px;
+
+  .social__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/icon/Ellipse.svg") no-repeat center;
+    background-size: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.twitter::after {
+    background: url("../img/icon/twitter.svg")  no-repeat center;
+    background-size: 100%;
+  }
+
+  &.facebook::after {
+    background: url("../img/icon/facebook.svg")  no-repeat center;
+    background-size: 100%;
+    width: 10px;
+    height: 21px;
+    top: 13px;
+    left: 18px;
+  }
+
+  &.youtube::after {
+    background: url("../img/icon/youtube.svg")  no-repeat center;
+    background-size: 100%;
+    width: 15px;
+    height: 13px;
+    top: 18px;
+    left: 18px;
+  }
+
+
 }

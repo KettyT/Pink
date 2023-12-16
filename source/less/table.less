@@ -1,0 +1,82 @@
+.price__table {
+  background-color: @background-grey;
+  overflow: hidden;
+  padding-top: 90px;
+}
+
+.price__wrapper {
+  width: 300%;
+  padding: 0 6%;
+  margin-bottom: 50px;
+  background-color: #F2F2F2;
+}
+
+.table__price {
+  width: 90%;
+  background: #fff;
+  //margin: 50px 0;
+
+  .table__price__header {
+    background: @dark-text;
+    padding: 10px 5px;
+    color: #fff;
+
+    .hit_background {
+      position: relative;
+    }
+
+    .hit_background::before {
+      content: "";
+      width: 73px;
+      height: 73px;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background: url("../img/icon/hit_ribbon.svg") no-repeat center;
+      background-size: 100%;
+    }
+
+    .hit_background::after {
+      content: "ХИТ";
+      width: 73px;
+      height: 73px;
+      position: absolute;
+      top: 8px;
+      left: 3px;
+      color: #fff;
+      transform: rotateZ(-45deg);
+    }
+
+    .table__price___first_col_first_row {
+      background: @background-grey;
+    }
+  }
+
+  th {
+    padding: 19px 0 35px;
+  }
+
+  td, th {
+    border: 1px solid @background-grey;
+    width: 80vw;
+  }
+
+  td {
+    padding: 24px 0 25px;
+
+
+    .table__price__td__wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+}
+
+.reviews__toggles {
+  padding-bottom: 50px;
+}

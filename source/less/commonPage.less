@@ -53,6 +53,32 @@ a {
 }
 
 .container {
-  width: 940px;
-  margin: 0 auto;
+  width: 100vw;
 }
+.review__info--tablet {
+  display: none;
+}
+
+.m_hidden {
+  display: none;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .m_hidden {
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: @desktop-width) {
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
